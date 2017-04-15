@@ -6,6 +6,7 @@ body {
 p {
   line-height: 1.5;
   margin: 30px 0;
+  /*color: red;*/
 }
 p a {
   text-decoration: underline;
@@ -30,39 +31,20 @@ a img:hover,
 a img:focus {
   cursor: zoom-in;
 }
-
-header {
-    /*background: #f5b335;*/
-    height: 60px;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
 }
-
-body, header {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #333333;
-}
-
-.nav-up {
-    /*top: -60px;*/
-    /*background-color: white;
-    color: black;*/
-}
-
-/*.nav-down {
-  background-color: white;
-  color: black;
-}*/
-
 .navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
@@ -109,6 +91,7 @@ body, header {
 }
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
+    background-color: transparent;
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -121,32 +104,8 @@ body, header {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  .nav-up {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    /*top: -61px;*/
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-  }
-  .nav-up .navbar-brand {
-    color: #333333;
-  }
-  .nav-up .navbar-brand:hover,
-  .nav-up .navbar-brand:focus {
-    color: #0085A1;
-  }
-  .nav-up .nav li a {
-    color: #333333;
-  }
-  .nav-up .nav li a:hover,
-  .nav-up .nav li a:focus {
-    color: #0085A1;
-  }
 
-  /*.navbar-custom.is-fixed {
+  .navbar-custom.is-fixed {
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -168,8 +127,11 @@ body, header {
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
     color: #0085A1;
-  }*/
-  .nav-down {
+  }
+
+
+  .navbar-custom.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
