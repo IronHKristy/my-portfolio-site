@@ -1,7 +1,13 @@
+html {
+  background-color: #eeefe5;
+
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #333333;
+  background-color: #eeefe5;
 }
 p {
   line-height: 1.5;
@@ -148,7 +154,7 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   height: 100vh;
 }
 
@@ -219,4 +225,115 @@ hr.small {
   .intro-header .post-heading .subheading {
     font-size: 30px;
   }
+}
+
+
+
+
+
+.servicesWrapper {
+		width:94%;
+		max-width:1170px;
+		margin:0px auto;
+}
+.servicesWrapper2 {
+		width:94%;
+		max-width:1170px;
+		margin:0px auto;
+}
+.servicesBox {
+	width:20.6%;
+	float:left;
+	margin-right:5.86%;
+	text-align:center;
+	font-size:15px;
+	color:#555555;
+	margin-top:-45px;
+	line-height:25px;
+}
+.servicesBoxLast {
+	width:20.6%;
+	float:left;
+	text-align:center;
+	font-size:15px;
+	color:#555555;
+	margin-top:-45px;
+	line-height:25px;
+}
+.servicesCircle {
+	/*background-color:#EEEFE5;*/
+	width:112px;
+	height:96px;
+	text-align:center;
+	padding-top:16px;
+	margin:0px auto;
+	/*-moz-border-radius: 56px;
+	-webkit-border-radius: 56px;
+	border-radius: 56px;
+	-khtml-border-radius: 56px;*/
+}
+.servicesCircle img {
+	width:100%;
+	/*max-width:114px;*/
+}
+.servicesTitle {
+	font-size:20px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+.servicesDivide1 {
+	margin:30px auto 30px auto;
+	width:50px;
+}
+.servicesDivide2 {
+	margin:30px auto 30px auto;
+	width:50px;
+}
+.servicesDivide3 {
+	margin:30px auto 30px auto;
+	width:50px;
+}
+.servicesDivide4 {
+	margin:30px auto 30px auto;
+	width:50px;
+}
+
+
+
+/* Tagline */
+
+.tagline {
+	width:100%;
+	background-color:#DEDECD;
+	padding:77px 0px 107px 0px;
+	border-top:1px solid #F4F5EE;
+}
+
+/*@media only screen and (min-width: 1000px) {
+.tagline2 {
+	width:100%;
+  height: 300px;
+	background-color:#DEDECD;
+	border-top:1px solid #F4F5EE;
+  }
+}
+@media only screen and (min-width: 750px) {
+.tagline2 {
+	width:100%;
+  height: 350px;
+	background-color:#DEDECD;
+	border-top:1px solid #F4F5EE;
+  }
+}*/
+.taglineWrapper {
+	width:94%;
+	max-width:900px;
+	margin:0px auto;
+	font-size:28px;
+	color:#666666;
+	text-align:center;
+	font-weight:300;
+	line-height:40px;
 }
