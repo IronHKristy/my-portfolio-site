@@ -299,7 +299,7 @@ a img:focus {
 }
 
 .about-text {
-  padding:59px 7% 70px 7%;
+  padding:10%;
   font-family: 'Raleway', sans-serif;
 	font-size:16px;
 	line-height:23px;
@@ -323,17 +323,17 @@ a img:focus {
 	background-color:#DEDECD;
 	padding:77px 0px 107px 0px;
 	border-top:1px solid #F4F5EE;
+  font-size:28px;
+  font-weight:300;
+  line-height:40px;
 }
 
 .taglineWrapper {
 	width:94%;
 	max-width:900px;
 	margin:0px auto;
-	font-size:28px;
 	color:#666666;
 	text-align:center;
-	font-weight:300;
-	line-height:40px;
 }
 
 /*empty space*/
@@ -401,23 +401,38 @@ a img:focus {
     transform: translate3d(0, 100%, 0);
   }
 
-
+/*
   .about-text {
     padding:70px 7% 70px 7%;
-  }
+  }*/
 }
 
 
 @media screen and (max-width: 991px) {
+  .intro-header {
+    height:75vh;
+  }
+  .tagline {
+    padding: 70px 0px 87px 0px;
+    font-size: 26px;
+  }
   .about-text {
-    padding:35px 7% 70px 7%;
+    padding:7%;
     font-size: 15px;
     line-height: 22px;
   }
 }
 
- /*Technology Icons Query*/
+
 @media screen and (max-width: 767px) {
+  .intro-header {
+    height:50vh;
+  }
+  .tagline {
+    padding: 43px 0px 45px 0px;
+    font-size: 20px;
+    line-height: 37px;
+  }
   .servicesJavascript {
     background-image:url(img/javascript.png);
     background-size:67px 66px;
@@ -552,14 +567,12 @@ a img:focus {
   .empty-space-2 {
     display: none;
   }
-  .about-pic{
-    display: none;
-  }
+
   .about-text-container {
-    height:365px;
+    height:auto;
   }
   .about-text {
-    padding:35px 7% 70px 7%;
+    padding:auto;
   }
   .title-text {
     font-size:45px;
@@ -578,10 +591,24 @@ a img:focus {
 }
 
 @media screen and (max-width: 479px) {
+  .tagline {
+    padding: 35px 0px 35px 0px;
+    font-size: 19px;
+    line-height: 31px;
+  }
   .title-text {
     font-size: 30px;
   }
   .about-text {
     padding:1px 7% 20px 7%;
   }
+}
+
+.tests {
+  height:50px;
+  background-color:blue;
+}
+.test {
+  height:50px;
+  background-color:red;
 }
