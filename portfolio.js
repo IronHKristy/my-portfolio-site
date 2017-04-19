@@ -66,3 +66,92 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+
+
+
+
+
+
+
+// google maps api
+function initMap() {
+  var Orleans = {lat: 29.952722, lng: -90.071663};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    scrollwheel: false,
+    center: Orleans,
+    styles: [
+  {
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#c7dcd0"
+            }
+        ]
+    }
+]
+  });
+  var marker = new google.maps.Marker({
+    position: Orleans,
+    map: map
+  });
+}
