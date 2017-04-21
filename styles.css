@@ -723,6 +723,7 @@ a img:focus {
     margin: 0 0 30px;
   }
 }
+
 .text-muted {
   color: #777777;
 }
@@ -817,4 +818,37 @@ section h3.section-subheading {
     width: 140px;
     border: 13px solid white;
     border-radius: 70px;
+}
+
+
+
+/*testing*/
+#contact-section {
+    background: #fff;
+    padding-top: 30px;
+}
+
+.contact-row{
+ background: #fff;
+ height: 100%;
+}
+
+.contact-container {
+   font-family: Open Sans,sans-serif;
+   /*width: 900px;*/
+   margin: 0 auto;
+}
+
+.photo-position {
+    position: relative;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    margin-bottom: -70px;
+    display:inline-block;
+}
+
+@media (max-width: 766px) {
+  .photo-position {
+    display:none;
+  }
 }
