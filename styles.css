@@ -44,15 +44,18 @@ a img:focus {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  color:white;
 }
 .navbar-custom .navbar-header .navbar-toggle {
-  color: #777777;
+  color:white;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 12px;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
+  color:white;
+
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -68,7 +71,7 @@ a img:focus {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #211e19;
   }
   .navbar-custom .nav li a {
     color: white;
@@ -76,7 +79,9 @@ a img:focus {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #211e19;
+    background-color:transparent;
+
   }
   .navbar-custom .nav li ul.dropdown-menu a {
     color: #333333;
@@ -242,20 +247,14 @@ a img:focus {
 
 
 .servicesCircle {
-	/*background-color:#EEEFE5;*/
 	width:112px;
 	height:96px;
 	text-align:center;
 	padding-top:16px;
 	margin:0px auto;
-	/*-moz-border-radius: 56px;
-	-webkit-border-radius: 56px;
-	border-radius: 56px;
-	-khtml-border-radius: 56px;*/
 }
 .servicesCircle img {
 	width:100%;
-	/*max-width:114px;*/
 }
 .servicesTitle {
 	font-size:20px;
@@ -390,7 +389,7 @@ a img:focus {
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085A1;
+    color:#e45028;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
